@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">
+        <h1>Conversor de Moedas</h1>
+    </div>
+    <div class="valSerConvert">
+        <h2>Selecione o tipo de moeda que será convertida</h2><br>
+        <input type="button" value="BRL" onclick="convertMoedas('BRL')">
+        <input type="button" value="USD" onclick="convertMoedas('USD')">
+        <input type="button" value="EUR" onclick="convertMoedas('EUR')">
+        <input type="button" value="GBP" onclick="convertMoedas('GBP')"><br><br>
+        <p>
+            <h3 id="symbolCoin"></h3>
+            <input type="number" id="valSerConvert" placeholder="Digite o valor:">
+        </p>
+    </div><br>
+    <div class="moedaConversao">
+        <h2>Selecione o tipo de moeda para a conversão</h2><br>
+        <input type="button" value="BRL" onclick="moedasConversao('BRL')">
+        <input type="button" value="USD" onclick="moedasConversao('USD')">
+        <input type="button" value="EUR" onclick="moedasConversao('EUR')">
+        <input type="button" value="GBP" onclick="moedasConversao('GBP')"><br><br>
+    </div><br>
+    <div class="result">
+        <h3 id="result"></h3>
+    </div>
+
+</body> 
+<script src="script.js"></script>
+</html>
